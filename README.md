@@ -6,6 +6,6 @@ A 4D v17 **HDI** (How Do I) binary database converted to a 4D project using 4D 2
 
 This project started as a binary `.4DB` example database originally distributed with 4D {version}. It was converted to the modern project architecture (`.4DProject`) using 4D 21's built-in binary-to-project conversion tool.
 
-- **Blog post:** 
+- **Blog post:** https://blog.4d.com/more-standard-actions-for-styled-text/
 
 - **Original download:** https://downloads.4d.com/Demos/4D_v16_R3/HDI_NewStandardActions.zip
