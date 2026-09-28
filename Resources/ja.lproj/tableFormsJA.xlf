@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/TableForms" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="TF_LabelID" resname="TF_LabelID">
+        <source>ID : </source>
+        <target>ID : </target>
+      </trans-unit>
+      <trans-unit id="TF_LabelTextInfo" resname="TF_LabelTextInfo">
+        <source>textInfo : </source>
+        <target>textInfo : </target>
+      </trans-unit>
+      <trans-unit id="TF_LabelInfo" resname="TF_LabelInfo">
+        <source>Info : </source>
+        <target>Info : </target>
+      </trans-unit>
+      <trans-unit id="TF_TitleInitTable" resname="TF_TitleInitTable">
+        <source>InitTable</source>
+        <target>InitTable</target>
+      </trans-unit>
+      <trans-unit id="TF_TitleSAMPLE" resname="TF_TitleSAMPLE">
+        <source>SAMPLE</source>
+        <target>SAMPLE</target>
+      </trans-unit>
+      <trans-unit id="TF_First" resname="TF_First">
+        <source>First</source>
+        <target>先頭</target>
+      </trans-unit>
+      <trans-unit id="TF_Previous" resname="TF_Previous">
+        <source>Previous</source>
+        <target>前へ</target>
+      </trans-unit>
+      <trans-unit id="TF_Next" resname="TF_Next">
+        <source>Next</source>
+        <target>次へ</target>
+      </trans-unit>
+      <trans-unit id="TF_Last" resname="TF_Last">
+        <source>Last</source>
+        <target>末尾</target>
+      </trans-unit>
+      <trans-unit id="TF_FirstPage" resname="TF_FirstPage">
+        <source>First page</source>
+        <target>最初のページ</target>
+      </trans-unit>
+      <trans-unit id="TF_LastPage" resname="TF_LastPage">
+        <source>Last page</source>
+        <target>最後のページ</target>
+      </trans-unit>
+      <trans-unit id="TF_Validate" resname="TF_Validate">
+        <source>Validate</source>
+        <target>確定</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

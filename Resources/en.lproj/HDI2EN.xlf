@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="HDI2_TabInformation" resname="HDI2_TabInformation">
+        <source>Information</source>
+        <target>Information</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabDemo" resname="HDI2_TabDemo">
+        <source>Demo</source>
+        <target>Demo</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabGetActionInfo" resname="HDI2_TabGetActionInfo">
+        <source>Get action info</source>
+        <target>Get action info</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text4" resname="HDI2_Text4">
+        <source>How do I use standard actions with text and styled text ?</source>
+        <target>How do I use standard actions with text and styled text ?</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text5" resname="HDI2_Text5">
+        <source>The standard actions can be defined:
+
+— In the buttons, via the property list (fig. 1)
+
+— In the menus, via the menu editor (fig. 2)
+
+— In the buttons by programming:
+
+          OBJECT SET ACTION(*;"fontBold";ak font bold)
+
+— In the menus by programming:
+
+          SET MENU ITEM PROPERTY(menu_Edit;-1;Associated standard action;ak cut)
+</source>
+        <target>The standard actions can be defined:
+
+— In the buttons, via the property list (fig. 1)
+
+— In the menus, via the menu editor (fig. 2)
+
+— In the buttons by programming:
+
+          OBJECT SET ACTION(*;"fontBold";ak font bold)
+
+— In the menus by programming:
+
+          SET MENU ITEM PROPERTY(menu_Edit;-1;Associated standard action;ak cut)
+</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text6" resname="HDI2_Text6">
+        <source>Thanks to standard actions, a lot of actions can be performed without any programming.
+(Cancel, Accept, Next Record, Previous Page, etc.)
+
+The number of these actions has been increased and can now apply to text areas (Simple text, Styled text and of course 4D Write Pro).
+
+The activation/deactivation of the buttons and menus are automatic according to the current text selection, and apply to the current object (the one with the focus).</source>
+        <target>Thanks to standard actions, a lot of actions can be performed without any programming.
+(Cancel, Accept, Next Record, Previous Page, etc.)
+
+The number of these actions has been increased and can now apply to text areas (Simple text, Styled text and of course 4D Write Pro).
+
+The activation/deactivation of the buttons and menus are automatic according to the current text selection, and apply to the current object (the one with the focus).</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Fig1" resname="HDI2_Fig1">
+        <source>Fig. 1</source>
+        <target>Fig. 1</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Fig2" resname="HDI2_Fig2">
+        <source>Fig. 2</source>
+        <target>Fig. 2</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelStyle" resname="HDI2_LabelStyle">
+        <source>Style</source>
+        <target>Style</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelEdit" resname="HDI2_LabelEdit">
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Label4D" resname="HDI2_Label4D">
+        <source>4D</source>
+        <target>4D</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelSpellCheck" resname="HDI2_LabelSpellCheck">
+        <source>Spell check</source>
+        <target>Spell check</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text9" resname="HDI2_Text9">
+        <source>All the menus (including the "HDI_xxx" menus of the menu bar) and button menus are created with standard actions.
+
+No line of code has been added to manage the user interface: Button activation and menu check marks are automatically updated!</source>
+        <target>All the menus (including the "HDI_xxx" menus of the menu bar) and button menus are created with standard actions.
+
+No line of code has been added to manage the user interface: Button activation and menu check marks are automatically updated!</target>
+      </trans-unit>
+      <trans-unit id="HDI2_SampleText" resname="HDI2_SampleText">
+        <source>Sample text</source>
+        <target>Sample text</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FontSize" resname="HDI2_FontSize">
+        <source>Font size</source>
+        <target>Font size</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FontColor" resname="HDI2_FontColor">
+        <source>Font color</source>
+        <target>Font color</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BackgroundColor" resname="HDI2_BackgroundColor">
+        <source>background color</source>
+        <target>background color</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InvokeAction" resname="HDI2_InvokeAction">
+        <source>Invoke action</source>
+        <target>Invoke action</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RightClickHint" resname="HDI2_RightClickHint">
+        <source>Right-click to use custom
+contextual menu</source>
+        <target>Right-click to use custom
+contextual menu</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ButtonBold24" resname="HDI2_ButtonBold24">
+        <source>Bold 24 Blue/Yellow</source>
+        <target>Bold 24 Blue/Yellow</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text12" resname="HDI2_Text12">
+        <source>The arrays below are filled according to the current selection of the text.
+
+The command "Get action info" is called for every action listed in the "Action" Column.</source>
+        <target>The arrays below are filled according to the current selection of the text.
+
+The command "Get action info" is called for every action listed in the "Action" Column.</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColAction" resname="HDI2_ColAction">
+        <source>Action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColTitleLocalized" resname="HDI2_ColTitleLocalized">
+        <source>Title (localized)</source>
+        <target>Title (localized)</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColStatus" resname="HDI2_ColStatus">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColEnabled" resname="HDI2_ColEnabled">
+        <source>Enabled</source>
+        <target>Enabled</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColVisible" resname="HDI2_ColVisible">
+        <source>Visible</source>
+        <target>Visible</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuNextPage" resname="HDI2_MenuNextPage">
+        <source>Next Page</source>
+        <target>Next Page</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuPreviousPage" resname="HDI2_MenuPreviousPage">
+        <source>Previous Page</source>
+        <target>Previous Page</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuCloseWindow" resname="HDI2_MenuCloseWindow">
+        <source>Close Window</source>
+        <target>Close Window</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuQuit" resname="HDI2_MenuQuit">
+        <source>Quit</source>
+        <target>Quit</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuCustomHint" resname="HDI2_MenuCustomHint">
+        <source>• This menu is custom •</source>
+        <target>• This menu is custom •</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuRevertText" resname="HDI2_MenuRevertText">
+        <source>Revert to original text</source>
+        <target>Revert to original text</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuFile" resname="HDI2_MenuFile">
+        <source>HDI_File</source>
+        <target>HDI_File</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuEdit" resname="HDI2_MenuEdit">
+        <source>HDI_Edit</source>
+        <target>HDI_Edit</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuStyleTitle" resname="HDI2_MenuStyleTitle">
+        <source>HDI_Style</source>
+        <target>HDI_Style</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Menu4D" resname="HDI2_Menu4D">
+        <source>HDI_4D</source>
+        <target>HDI_4D</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

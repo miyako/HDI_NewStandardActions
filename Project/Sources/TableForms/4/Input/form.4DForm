@@ -1,0 +1,487 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 235,
+	"markerBreak": 235,
+	"markerFooter": 245,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 114,
+					"left": 498,
+					"width": 100,
+					"height": 12,
+					"dataSource": "vRecNum",
+					"stroke": "automatic",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 111,
+					"left": 24,
+					"width": 459,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "automatic",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": ":xliff:TF_TitleSAMPLE"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 95,
+					"left": 16,
+					"width": 595,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "button",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_First",
+					"icon": "/RESOURCES/Images/Buttons/Glass/FirstRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bPrevious": {
+					"type": "button",
+					"top": 16,
+					"left": 84,
+					"width": 53,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_Previous",
+					"icon": "/RESOURCES/Images/Buttons/Glass/PreviousRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bNext": {
+					"type": "button",
+					"top": 16,
+					"left": 152,
+					"width": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_Next",
+					"icon": "/RESOURCES/Images/Buttons/Glass/NextRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bLast": {
+					"type": "button",
+					"top": 16,
+					"left": 215,
+					"width": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_Last",
+					"icon": "/RESOURCES/Images/Buttons/Glass/LastRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bFirstPage": {
+					"type": "button",
+					"top": 16,
+					"left": 278,
+					"width": 62,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Page"
+					},
+					"action": "firstPage",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_FirstPage",
+					"icon": "/RESOURCES/Images/Buttons/Glass/FirstPage.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bLastPage": {
+					"type": "button",
+					"top": 16,
+					"left": 355,
+					"width": 61,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Page"
+					},
+					"action": "lastPage",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_LastPage",
+					"icon": "/RESOURCES/Images/Buttons/Glass/LastPage.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 16,
+					"left": 431,
+					"width": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:CommonDelete",
+					"icon": "/RESOURCES/Images/Buttons/Glass/DeleteRecord.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 16,
+					"left": 494,
+					"width": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:CommonCancel",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Cancel.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"bValidate": {
+					"type": "button",
+					"top": 16,
+					"left": 557,
+					"width": 49,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"textAlign": "center",
+					"stroke": "automatic",
+					"focusable": false,
+					"text": ":xliff:TF_Validate",
+					"icon": "/RESOURCES/Images/Buttons/Glass/Validate.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 144,
+					"left": 262,
+					"width": 39,
+					"height": 17,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": ":xliff:TF_LabelID"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 171,
+					"left": 262,
+					"width": 39,
+					"height": 17,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": ":xliff:TF_LabelInfo"
+				},
+				"ID": {
+					"type": "input",
+					"top": 144,
+					"left": 306,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[SAMPLE:4]ID:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Info": {
+					"type": "input",
+					"top": 171,
+					"left": 306,
+					"width": 236,
+					"height": 305,
+					"dataSource": "[SAMPLE:4]Info:2",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "automatic",
+					"borderStyle": "sunken",
+					"styledText": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fontBold": {
+					"type": "button",
+					"top": 238,
+					"left": 110,
+					"width": 130,
+					"action": "fontBold",
+					"text": "fontBold",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"fontUnderline": {
+					"type": "button",
+					"top": 263,
+					"left": 110,
+					"width": 130,
+					"action": "fontUnderline",
+					"text": "fontUnderline",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"fontItalic": {
+					"type": "button",
+					"top": 288,
+					"left": 110,
+					"width": 130,
+					"action": "fontItalic",
+					"text": "fontItalic",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"fontLinethrough": {
+					"type": "button",
+					"top": 312,
+					"left": 110,
+					"width": 130,
+					"action": "fontLinethrough",
+					"text": "fontLinethrough",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Button5": {
+					"type": "button",
+					"top": 413,
+					"left": 110,
+					"width": 130,
+					"action": "font/showDialog",
+					"text": "font/showDialog",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Button36": {
+					"type": "button",
+					"top": 338,
+					"left": 110,
+					"width": 130,
+					"action": "fontSuperscript",
+					"text": "fontSuperscript",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Button37": {
+					"type": "button",
+					"top": 363,
+					"left": 110,
+					"width": 130,
+					"action": "fontSubscript",
+					"text": "fontSubscript",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text5",
+					"Line6"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bFirstPage",
+					"bLastPage",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

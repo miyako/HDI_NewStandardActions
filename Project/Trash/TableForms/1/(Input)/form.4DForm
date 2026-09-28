@@ -1,0 +1,770 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerBody": 650,
+	"markerBreak": 650,
+	"markerFooter": 660,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text17": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 406,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 18,
+					"text": "Countries"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 10,
+					"left": 525,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Line18": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 650,
+					"sizingY": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - First Record.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Previous Record.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Next Record.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Last Record.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Delete Record.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Cancel.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - OK.pict",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "ShortName : "
+				},
+				"Text20": {
+					"type": "text",
+					"top": 69,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Name : "
+				},
+				"Text21": {
+					"type": "text",
+					"top": 93,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Capital : "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 117,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Language : "
+				},
+				"Text23": {
+					"type": "text",
+					"top": 141,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Anthem : "
+				},
+				"Text24": {
+					"type": "text",
+					"top": 165,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Currency : "
+				},
+				"Text25": {
+					"type": "text",
+					"top": 189,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "TimeZone : "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 213,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "TLD : "
+				},
+				"Text27": {
+					"type": "text",
+					"top": 237,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "CallingCode : "
+				},
+				"Text28": {
+					"type": "text",
+					"top": 261,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Area : "
+				},
+				"Text29": {
+					"type": "text",
+					"top": 285,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "AreaPosition : "
+				},
+				"Text30": {
+					"type": "text",
+					"top": 309,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Inhabitants : "
+				},
+				"Text31": {
+					"type": "text",
+					"top": 333,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "InhabitantPosition : "
+				},
+				"Text32": {
+					"type": "text",
+					"top": 357,
+					"left": 115,
+					"width": 113,
+					"height": 15,
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"text": "Flag : "
+				},
+				"ShortName": {
+					"type": "input",
+					"top": 45,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]ShortName",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Name": {
+					"type": "input",
+					"top": 69,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]Name",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Capital": {
+					"type": "input",
+					"top": 93,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]Capital",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Language": {
+					"type": "input",
+					"top": 117,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]Language",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Anthem": {
+					"type": "input",
+					"top": 141,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]Anthem",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Currency": {
+					"type": "input",
+					"top": 165,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]Currency",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TimeZone": {
+					"type": "input",
+					"top": 189,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]TimeZone",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TLD": {
+					"type": "input",
+					"top": 213,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]TLD",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CallingCode": {
+					"type": "input",
+					"top": 237,
+					"left": 233,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[(Countries)]CallingCode",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Area": {
+					"type": "input",
+					"top": 261,
+					"left": 233,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[(Countries)]Area",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AreaPosition": {
+					"type": "input",
+					"top": 285,
+					"left": 233,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[(Countries)]AreaPosition",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Inhabitants": {
+					"type": "input",
+					"top": 309,
+					"left": 233,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[(Countries)]Inhabitants",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"InhabitantPosition": {
+					"type": "input",
+					"top": 333,
+					"left": 233,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[(Countries)]InhabitantPosition",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Helvetica",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Flag": {
+					"type": "input",
+					"top": 357,
+					"left": 233,
+					"width": 234,
+					"height": 250,
+					"dataSource": "[(Countries)]Flag",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "visible",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text17",
+					"vRecNum",
+					"Line18"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

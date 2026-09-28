@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI2_TabInformation" resname="HDI2_TabInformation">
+        <source>Information</source>
+        <target>情報</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabDemo" resname="HDI2_TabDemo">
+        <source>Demo</source>
+        <target>デモ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabGetActionInfo" resname="HDI2_TabGetActionInfo">
+        <source>Get action info</source>
+        <target>アクション情報の取得</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text4" resname="HDI2_Text4">
+        <source>How do I use standard actions with text and styled text ?</source>
+        <target>テキストおよびスタイル付きテキストで標準アクションを使うには？</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text5" resname="HDI2_Text5">
+        <source>The standard actions can be defined:
+
+— In the buttons, via the property list (fig. 1)
+
+— In the menus, via the menu editor (fig. 2)
+
+— In the buttons by programming:
+
+          OBJECT SET ACTION(*;"fontBold";ak font bold)
+
+— In the menus by programming:
+
+          SET MENU ITEM PROPERTY(menu_Edit;-1;Associated standard action;ak cut)
+</source>
+        <target>標準アクションは次の方法で定義できます:
+
+— ボタンのプロパティリストから (図1)
+
+— メニューエディタでメニューから (図2)
+
+— プログラムでボタンに設定:
+
+          OBJECT SET ACTION(*;"fontBold";ak font bold)
+
+— プログラムでメニューに設定:
+
+          SET MENU ITEM PROPERTY(menu_Edit;-1;Associated standard action;ak cut)
+</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text6" resname="HDI2_Text6">
+        <source>Thanks to standard actions, a lot of actions can be performed without any programming.
+(Cancel, Accept, Next Record, Previous Page, etc.)
+
+The number of these actions has been increased and can now apply to text areas (Simple text, Styled text and of course 4D Write Pro).
+
+The activation/deactivation of the buttons and menus are automatic according to the current text selection, and apply to the current object (the one with the focus).</source>
+        <target>標準アクションのおかげで、プログラミングを一切行わずに多くの操作を実行できます。
+(Cancel, Accept, Next Record, Previous Page など)
+
+これらのアクションの数は増加しており、現在はテキストエリア (シンプルテキスト、スタイル付きテキスト、そしてもちろん4D Write Pro) にも適用できます。
+
+ボタンとメニューの有効化・無効化は、現在のテキスト選択範囲とフォーカスのあるオブジェクトに応じて自動的に行われます。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Fig1" resname="HDI2_Fig1">
+        <source>Fig. 1</source>
+        <target>図1</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Fig2" resname="HDI2_Fig2">
+        <source>Fig. 2</source>
+        <target>図2</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelStyle" resname="HDI2_LabelStyle">
+        <source>Style</source>
+        <target>スタイル</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelEdit" resname="HDI2_LabelEdit">
+        <source>Edit</source>
+        <target>編集</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Label4D" resname="HDI2_Label4D">
+        <source>4D</source>
+        <target>4D</target>
+      </trans-unit>
+      <trans-unit id="HDI2_LabelSpellCheck" resname="HDI2_LabelSpellCheck">
+        <source>Spell check</source>
+        <target>スペルチェック</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text9" resname="HDI2_Text9">
+        <source>All the menus (including the "HDI_xxx" menus of the menu bar) and button menus are created with standard actions.
+
+No line of code has been added to manage the user interface: Button activation and menu check marks are automatically updated!</source>
+        <target>メニューバーの "HDI_xxx" メニューを含むすべてのメニューとボタンメニューは、標準アクションを使用して作成されています。
+
+ユーザーインターフェースを管理するためのコードは一切追加されていません。ボタンの有効化とメニューのチェックマークは自動的に更新されます！</target>
+      </trans-unit>
+      <trans-unit id="HDI2_SampleText" resname="HDI2_SampleText">
+        <source>Sample text</source>
+        <target>サンプルテキスト</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FontSize" resname="HDI2_FontSize">
+        <source>Font size</source>
+        <target>フォントサイズ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_FontColor" resname="HDI2_FontColor">
+        <source>Font color</source>
+        <target>フォントカラー</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BackgroundColor" resname="HDI2_BackgroundColor">
+        <source>background color</source>
+        <target>背景色</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InvokeAction" resname="HDI2_InvokeAction">
+        <source>Invoke action</source>
+        <target>アクションの呼び出し</target>
+      </trans-unit>
+      <trans-unit id="HDI2_RightClickHint" resname="HDI2_RightClickHint">
+        <source>Right-click to use custom
+contextual menu</source>
+        <target>右クリックでカスタムの
+コンテキストメニューを使用</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ButtonBold24" resname="HDI2_ButtonBold24">
+        <source>Bold 24 Blue/Yellow</source>
+        <target>Bold 24 Blue/Yellow</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Text12" resname="HDI2_Text12">
+        <source>The arrays below are filled according to the current selection of the text.
+
+The command "Get action info" is called for every action listed in the "Action" Column.</source>
+        <target>下の配列は、テキストの現在の選択範囲に応じて入力されます。
+
+"Action" 列に列挙された各アクションについて "Get action info" コマンドが呼び出されます。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColAction" resname="HDI2_ColAction">
+        <source>Action</source>
+        <target>アクション</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColTitleLocalized" resname="HDI2_ColTitleLocalized">
+        <source>Title (localized)</source>
+        <target>タイトル (ローカライズ)</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColStatus" resname="HDI2_ColStatus">
+        <source>Status</source>
+        <target>ステータス</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColEnabled" resname="HDI2_ColEnabled">
+        <source>Enabled</source>
+        <target>有効</target>
+      </trans-unit>
+      <trans-unit id="HDI2_ColVisible" resname="HDI2_ColVisible">
+        <source>Visible</source>
+        <target>表示</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuNextPage" resname="HDI2_MenuNextPage">
+        <source>Next Page</source>
+        <target>次のページ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuPreviousPage" resname="HDI2_MenuPreviousPage">
+        <source>Previous Page</source>
+        <target>前のページ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuCloseWindow" resname="HDI2_MenuCloseWindow">
+        <source>Close Window</source>
+        <target>ウインドウを閉じる</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuQuit" resname="HDI2_MenuQuit">
+        <source>Quit</source>
+        <target>終了</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuCustomHint" resname="HDI2_MenuCustomHint">
+        <source>• This menu is custom •</source>
+        <target>・このメニューはカスタムです・</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuRevertText" resname="HDI2_MenuRevertText">
+        <source>Revert to original text</source>
+        <target>元のテキストに戻す</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuFile" resname="HDI2_MenuFile">
+        <source>HDI_File</source>
+        <target>HDI_File</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuEdit" resname="HDI2_MenuEdit">
+        <source>HDI_Edit</source>
+        <target>HDI_Edit</target>
+      </trans-unit>
+      <trans-unit id="HDI2_MenuStyleTitle" resname="HDI2_MenuStyleTitle">
+        <source>HDI_Style</source>
+        <target>HDI_Style</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Menu4D" resname="HDI2_Menu4D">
+        <source>HDI_4D</source>
+        <target>HDI_4D</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
