@@ -1,4 +1,4 @@
-//%attributes = {}
-C_TEXT:C284($0)
+//%attributes = {"invisible":true}
+#DECLARE->$result : Text
 
-$0:=String:C10(Current time:C178; HH MM SS:K7:1)
+$result:=String:C10(Current time:C178; HH MM SS:K7:1)

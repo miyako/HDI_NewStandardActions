@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Sources/Forms/HDI/form.4DForm" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI_TxtInfo1" resname="HDI_TxtInfo1">
+        <source>How Do I...</source>
+        <target>How Do I...</target>
+      </trans-unit>
+      <trans-unit id="HDI_TxtInfo2" resname="HDI_TxtInfo2">
+        <source>… use new standard actions with Styled Text areas ?</source>
+        <target>…スタイル付きテキストエリアで新しい標準アクションを使うには？</target>
+      </trans-unit>
+      <trans-unit id="HDI_BtnDemo" resname="HDI_BtnDemo">
+        <source>Demo</source>
+        <target>デモ</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

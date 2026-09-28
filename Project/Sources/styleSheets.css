@@ -1,0 +1,16 @@
+/* Cross-platform dark mode support. Automatic color values (set directly
+   on form objects via "automatic"/"automaticAlternate") adapt to light/dark
+   mode without needing media queries here. These rules cover project-wide
+   class-based styling that should also react to the active color scheme. */
+
+@media (prefers-color-scheme: light) {
+	.HDI {
+		color: #212121;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.HDI {
+		color: #E0E0E0;
+	}
+}

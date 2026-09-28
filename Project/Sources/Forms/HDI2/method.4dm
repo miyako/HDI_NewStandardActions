@@ -1,4 +1,4 @@
-C_TEXT:C284(stText)
+var stText : Text
 
 Case of 
 		
@@ -67,21 +67,21 @@ Case of
 		
 		menu_File:=Create menu:C408
 		
-		APPEND MENU ITEM:C411(menu_File; "Next Page")
+		APPEND MENU ITEM:C411(menu_File; Localized string("HDI2_MenuNextPage"))
 		SET MENU ITEM PROPERTY:C973(menu_File; -1; Associated standard action:K56:1; ak next page:K76:43)
 		//SET MENU ITEM SHORTCUT(menu_File;-1;">";Command key mask)
 		
-		APPEND MENU ITEM:C411(menu_File; "Previous Page")
+		APPEND MENU ITEM:C411(menu_File; Localized string("HDI2_MenuPreviousPage"))
 		SET MENU ITEM PROPERTY:C973(menu_File; -1; Associated standard action:K56:1; ak previous page:K76:44)
 		//SET MENU ITEM SHORTCUT(menu_File;-1;"<";Command key mask)
 		
 		APPEND MENU ITEM:C411(menu_File; "-")
 		
-		APPEND MENU ITEM:C411(menu_File; "Close Window")
+		APPEND MENU ITEM:C411(menu_File; Localized string("HDI2_MenuCloseWindow"))
 		SET MENU ITEM PROPERTY:C973(menu_File; -1; Associated standard action:K56:1; ak cancel:K76:36)
 		//SET MENU ITEM SHORTCUT(menu_File;-1;"W";Command key mask)
 		
-		APPEND MENU ITEM:C411(menu_File; "Quit")
+		APPEND MENU ITEM:C411(menu_File; Localized string("HDI2_MenuQuit"))
 		SET MENU ITEM PROPERTY:C973(menu_File; -1; Associated standard action:K56:1; ak quit:K76:61)
 		
 		
@@ -173,8 +173,8 @@ Case of
 		menu_Hierarchical:=Create menu:C408
 		
 		
-		APPEND MENU ITEM:C411(menu_Hierarchical; "• This menu is custom •")
-		APPEND MENU ITEM:C411(menu_Hierarchical; "Revert to original text")
+		APPEND MENU ITEM:C411(menu_Hierarchical; Localized string("HDI2_MenuCustomHint"))
+		APPEND MENU ITEM:C411(menu_Hierarchical; Localized string("HDI2_MenuRevertText"))
 		SET MENU ITEM PARAMETER:C1004(menu_Hierarchical; -1; "Revert")
 		
 		APPEND MENU ITEM:C411(menu_Hierarchical; "-")
@@ -209,10 +209,10 @@ Case of
 		
 		menu_form:=Create menu:C408
 		
-		APPEND MENU ITEM:C411(menu_form; "HDI_File"; menu_File)
-		APPEND MENU ITEM:C411(menu_form; "HDI_Edit"; menu_Edit)
-		APPEND MENU ITEM:C411(menu_form; "HDI_Style"; menu_Style)
-		APPEND MENU ITEM:C411(menu_form; "HDI_4D"; menu_4D)
+		APPEND MENU ITEM:C411(menu_form; Localized string("HDI2_MenuFile"); menu_File)
+		APPEND MENU ITEM:C411(menu_form; Localized string("HDI2_MenuEdit"); menu_Edit)
+		APPEND MENU ITEM:C411(menu_form; Localized string("HDI2_MenuStyleTitle"); menu_Style)
+		APPEND MENU ITEM:C411(menu_form; Localized string("HDI2_Menu4D"); menu_4D)
 		
 		SET MENU BAR:C67(menu_form)
 		

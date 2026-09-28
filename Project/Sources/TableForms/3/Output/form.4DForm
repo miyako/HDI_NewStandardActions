@@ -70,7 +70,7 @@
 					"sizingX": "grow",
 					"fontFamily": "System Font",
 					"fontSize": 12,
-					"text": "ID : "
+					"text": ":xliff:TF_LabelID"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -81,7 +81,7 @@
 					"sizingX": "grow",
 					"fontFamily": "System Font",
 					"fontSize": 12,
-					"text": "textInfo : "
+					"text": ":xliff:TF_LabelTextInfo"
 				},
 				"Rectangle4": {
 					"type": "rectangle",
@@ -132,7 +132,7 @@
 					"dataSource": "[InitTable:3]textInfo:2",
 					"fontFamily": "System Font",
 					"fontSize": 12,
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -154,7 +154,7 @@
 					"top": 2,
 					"left": 77,
 					"height": 46,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Splitter2": {
 					"type": "splitter",

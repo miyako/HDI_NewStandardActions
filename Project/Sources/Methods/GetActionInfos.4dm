@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 $n:=Size of array:C274(_Actions)
 
 For ($i; 1; $n)

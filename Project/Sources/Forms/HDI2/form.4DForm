@@ -34,9 +34,9 @@
 					"dataSource": "Tab Control",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"Information",
-						"Demo",
-						"Get action info"
+						":xliff:HDI2_TabInformation",
+						":xliff:HDI2_TabDemo",
+						":xliff:HDI2_TabGetActionInfo"
 					],
 					"action": "GotoPage",
 					"events": [
@@ -73,8 +73,8 @@
 					"left": 480,
 					"width": 520,
 					"height": 300,
-					"fill": "#D9D9D9",
-					"stroke": "#C0C0C0",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Text4": {
@@ -85,7 +85,8 @@
 					"height": 50,
 					"class": "HDI",
 					"textAlign": "center",
-					"text": "How do I use standard actions with text and styled text ?"
+					"text": ":xliff:HDI2_Text4",
+					"stroke": "automatic"
 				},
 				"Text5": {
 					"type": "text",
@@ -94,7 +95,8 @@
 					"width": 420,
 					"height": 269,
 					"class": "default",
-					"text": "The standard actions can be defined:\r\r— In the buttons, via the property list (fig. 1)\r\r— In the menus, via the menu editor (fig. 2)\r\r— In the buttons by programming:\r\r          OBJECT SET ACTION(*;\"fontBold\";ak font bold)\r\r— In the menus by programming:\r\r          SET MENU ITEM PROPERTY(menu_Edit;-1;Associated standard action;ak cut)\r"
+					"text": ":xliff:HDI2_Text5",
+					"stroke": "automatic"
 				},
 				"Picture7": {
 					"type": "picture",
@@ -112,7 +114,8 @@
 					"width": 960,
 					"height": 129,
 					"class": "default",
-					"text": "Thanks to standard actions, a lot of actions can be performed without any programming.\r(Cancel, Accept, Next Record, Previous Page, etc.)\r\rThe number of these actions has been increased and can now apply to text areas (Simple text, Styled text and of course 4D Write Pro).\r\rThe activation/deactivation of the buttons and menus are automatic according to the current text selection, and apply to the current object (the one with the focus)."
+					"text": ":xliff:HDI2_Text6",
+					"stroke": "automatic"
 				},
 				"Picture8": {
 					"type": "picture",
@@ -131,7 +134,8 @@
 					"height": 14,
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "Fig. 1"
+					"text": ":xliff:HDI2_Fig1",
+					"stroke": "automatic"
 				},
 				"Text8": {
 					"type": "text",
@@ -141,7 +145,8 @@
 					"height": 14,
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "Fig. 2"
+					"text": ":xliff:HDI2_Fig2",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -153,8 +158,8 @@
 					"left": 540,
 					"width": 200,
 					"height": 90,
-					"fill": "#D8D8D8",
-					"stroke": "#B2B2B2",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Round Rectangle3": {
@@ -163,8 +168,8 @@
 					"left": 540,
 					"width": 200,
 					"height": 120,
-					"fill": "#D8D8D8",
-					"stroke": "#B2B2B2",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Round Rectangle2": {
@@ -173,8 +178,8 @@
 					"left": 760,
 					"width": 280,
 					"height": 480,
-					"fill": "#D8D8D8",
-					"stroke": "#B2B2B2",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Round Rectangle1": {
@@ -183,8 +188,8 @@
 					"left": 540,
 					"width": 200,
 					"height": 250,
-					"fill": "#D8D8D8",
-					"stroke": "#B2B2B2",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"Round Rectangle": {
@@ -193,8 +198,8 @@
 					"left": 340,
 					"width": 180,
 					"height": 480,
-					"fill": "#D8D8D8",
-					"stroke": "#B2B2B2",
+					"fill": "automatic",
+					"stroke": "automatic",
 					"borderRadius": 5
 				},
 				"fontBold": {
@@ -202,193 +207,192 @@
 					"top": 220,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "fontBold",
 					"text": "fontBold",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"fontItalic": {
 					"type": "button",
 					"top": 245,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "fontItalic",
 					"text": "fontItalic",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"fontUnderline": {
 					"type": "button",
 					"top": 270,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "fontUnderline",
 					"text": "fontUnderline",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"fontLinethrough": {
 					"type": "button",
 					"top": 295,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "fontLinethrough",
 					"text": "fontLinethrough",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"font/showDialog": {
 					"type": "button",
 					"top": 320,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "font/showDialog",
 					"text": "font/showDialog",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"color/showDialog": {
 					"type": "button",
 					"top": 345,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "color/showDialog",
 					"text": "color/showDialog",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"backgroundColor/showDialog": {
 					"type": "button",
 					"top": 370,
 					"left": 355,
 					"width": 150,
-					"height": 19,
 					"action": "backgroundColor/showDialog",
 					"text": "backgroundColor/showDialog",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size2": {
 					"type": "button",
 					"top": 440,
 					"left": 355,
 					"width": 45,
-					"height": 19,
 					"action": "fontSize?value=12pt",
 					"text": "12",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size1": {
 					"type": "button",
 					"top": 440,
 					"left": 407,
 					"width": 46,
-					"height": 19,
 					"action": "fontSize?value=18pt",
 					"text": "18",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size3": {
 					"type": "button",
 					"top": 440,
 					"left": 460,
 					"width": 45,
-					"height": 19,
 					"action": "fontSize?value=14pt",
 					"text": "14",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size5": {
 					"type": "button",
 					"top": 510,
 					"left": 355,
 					"width": 70,
-					"height": 19,
 					"action": "color?value=blue",
 					"text": "Blue",
 					"stroke": "#0000CD",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size6": {
 					"type": "button",
 					"top": 510,
 					"left": 435,
 					"width": 70,
-					"height": 19,
 					"action": "color?value=red",
 					"text": "Red",
 					"stroke": "#FF0000",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size7": {
 					"type": "button",
 					"top": 535,
 					"left": 355,
 					"width": 70,
-					"height": 19,
 					"action": "color?value=black",
 					"text": "Black",
 					"stroke": "#000000",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size8": {
 					"type": "button",
 					"top": 535,
 					"left": 435,
 					"width": 70,
-					"height": 19,
 					"action": "color?value=grey",
 					"text": "Grey",
 					"stroke": "#808080",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size9": {
 					"type": "button",
 					"top": 595,
 					"left": 355,
 					"width": 70,
-					"height": 19,
 					"action": "backgroundColor?value=#B0E0ff",
 					"text": "/////////",
 					"fontFamily": "System Font",
@@ -398,14 +402,14 @@
 					"method": "ObjectMethods/size9.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size10": {
 					"type": "button",
 					"top": 595,
 					"left": 435,
 					"width": 70,
-					"height": 19,
 					"action": "backgroundColor?value=#ffe0e0",
 					"text": "/////////",
 					"stroke": "#FFB6C1",
@@ -413,14 +417,14 @@
 					"method": "ObjectMethods/size10.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size11": {
 					"type": "button",
 					"top": 620,
 					"left": 355,
 					"width": 70,
-					"height": 19,
 					"action": "backgroundColor?value=black",
 					"text": "/////////",
 					"stroke": "#000000",
@@ -428,14 +432,14 @@
 					"method": "ObjectMethods/size11.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"size12": {
 					"type": "button",
 					"top": 620,
 					"left": 435,
 					"width": 70,
-					"height": 19,
 					"action": "backgroundColor?value=lightgrey",
 					"text": "/////////",
 					"stroke": "#C0C0C0",
@@ -443,359 +447,360 @@
 					"method": "ObjectMethods/size12.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button": {
 					"type": "button",
 					"top": 230,
 					"left": 555,
 					"width": 170,
-					"height": 19,
-					"text": "Bold 24 Blue/Yellow",
+					"text": ":xliff:HDI2_ButtonBold24",
 					"fontWeight": "bold",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"undo": {
 					"type": "button",
 					"top": 320,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "undo",
 					"text": "undo",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"redo": {
 					"type": "button",
 					"top": 345,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "redo",
 					"text": "redo",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"cut": {
 					"type": "button",
 					"top": 370,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "cut",
 					"text": "cut",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"copy": {
 					"type": "button",
 					"top": 395,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "copy",
 					"text": "copy",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"paste": {
 					"type": "button",
 					"top": 420,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "paste",
 					"text": "paste",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"clear": {
 					"type": "button",
 					"top": 445,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "clear",
 					"text": "clear",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"selectall": {
 					"type": "button",
 					"top": 470,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "selectall",
 					"text": "selectall",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"showClipboard": {
 					"type": "button",
 					"top": 495,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "showClipboard",
 					"text": "showClipboard",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"visibleReferences": {
 					"type": "button",
 					"top": 570,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "visibleReferences",
 					"text": "visibleReferences",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"computeExpressions": {
 					"type": "button",
 					"top": 595,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "computeExpressions",
 					"text": "computeExpressions",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"freezeExpressions": {
 					"type": "button",
 					"top": 620,
 					"left": 555,
 					"width": 170,
-					"height": 19,
 					"action": "freezeExpressions",
 					"text": "freezeExpressions",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button21": {
 					"type": "button",
 					"top": 220,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/enabled",
 					"text": "spell/enabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button22": {
 					"type": "button",
 					"top": 245,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/grammarEnabled",
 					"text": "spell/grammarEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button23": {
 					"type": "button",
 					"top": 270,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/autoCorrectionEnabled",
 					"text": "spell/autoCorrectionEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button24": {
 					"type": "button",
 					"top": 295,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/autoSubstitutionsEnabled",
 					"text": "spell/autoSubstitutionsEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button25": {
 					"type": "button",
 					"top": 345,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/visibleSubstitutions",
 					"text": "spell/visibleSubstitutions",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button26": {
 					"type": "button",
 					"top": 370,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/removeSubstitution",
 					"text": "spell/removeSubstitution",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button27": {
 					"type": "button",
 					"top": 395,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/autoDashSubstitutionsEnabled",
 					"text": "spell/autoDashSubstitutionsEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button28": {
 					"type": "button",
 					"top": 420,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/autoQuoteSubstitutionsEnabled",
 					"text": "spell/autoQuoteSubstitutionsEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button29": {
 					"type": "button",
 					"top": 445,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/learn",
 					"text": "spell/learn",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button30": {
 					"type": "button",
 					"top": 470,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/unLearn",
 					"text": "spell/unLearn",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button31": {
 					"type": "button",
 					"top": 495,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/ignore",
 					"text": "spell/ignore",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button32": {
 					"type": "button",
 					"top": 520,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/forgetIgnore",
 					"text": "spell/forgetIgnore",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button33": {
 					"type": "button",
 					"top": 570,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/autoLanguageEnabled",
 					"text": "spell/autoLanguageEnabled",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button34": {
 					"type": "button",
 					"top": 595,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/showDialog",
 					"text": "spell/showDialog",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Button35": {
 					"type": "button",
 					"top": 620,
 					"left": 780,
 					"width": 240,
-					"height": 19,
 					"action": "spell/forgetIgnore",
 					"text": "spell/forgetIgnore",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text": {
 					"type": "text",
@@ -805,7 +810,8 @@
 					"height": 17,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Style"
+					"text": ":xliff:HDI2_LabelStyle",
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -815,7 +821,8 @@
 					"height": 17,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Edit"
+					"text": ":xliff:HDI2_LabelEdit",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -825,7 +832,8 @@
 					"height": 17,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "4D"
+					"text": ":xliff:HDI2_Label4D",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -835,49 +843,50 @@
 					"height": 17,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Spell check"
+					"text": ":xliff:HDI2_LabelSpellCheck",
+					"stroke": "automatic"
 				},
 				"Bouton": {
 					"type": "button",
 					"top": 290,
 					"left": 710,
 					"width": 20,
-					"height": 20,
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Triangle.png",
 					"style": "custom",
 					"method": "ObjectMethods/Bouton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Bouton1": {
 					"type": "button",
 					"top": 190,
 					"left": 490,
 					"width": 20,
-					"height": 20,
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Triangle.png",
 					"style": "custom",
 					"method": "ObjectMethods/Bouton1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Bouton2": {
 					"type": "button",
 					"top": 550,
 					"left": 710,
 					"width": 20,
-					"height": 20,
 					"focusable": false,
 					"icon": "/RESOURCES/Images/Triangle.png",
 					"style": "custom",
 					"method": "ObjectMethods/Bouton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Text9": {
 					"type": "text",
@@ -885,7 +894,8 @@
 					"left": 380,
 					"width": 620,
 					"height": 90,
-					"text": "All the menus (including the \"HDI_xxx\" menus of the menu bar) and button menus are created with standard actions.\r\rNo line of code has been added to manage the user interface: Button activation and menu check marks are automatically updated!"
+					"text": ":xliff:HDI2_Text9",
+					"stroke": "automatic"
 				},
 				"Text11": {
 					"type": "text",
@@ -895,7 +905,8 @@
 					"height": 17,
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Sample text"
+					"text": ":xliff:HDI2_SampleText",
+					"stroke": "automatic"
 				},
 				"Picture9": {
 					"type": "picture",
@@ -923,7 +934,8 @@
 					"height": 14,
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "Font size"
+					"text": ":xliff:HDI2_FontSize",
+					"stroke": "automatic"
 				},
 				"Text14": {
 					"type": "text",
@@ -933,7 +945,8 @@
 					"height": 14,
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "Font color"
+					"text": ":xliff:HDI2_FontColor",
+					"stroke": "automatic"
 				},
 				"Text15": {
 					"type": "text",
@@ -943,7 +956,8 @@
 					"height": 14,
 					"textAlign": "center",
 					"fontTheme": "additional",
-					"text": "background color"
+					"text": ":xliff:HDI2_BackgroundColor",
+					"stroke": "automatic"
 				},
 				"Text17": {
 					"type": "text",
@@ -953,7 +967,8 @@
 					"height": 17,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Invoke action"
+					"text": ":xliff:HDI2_InvokeAction",
+					"stroke": "automatic"
 				},
 				"Picture2": {
 					"type": "picture",
@@ -981,7 +996,8 @@
 					"height": 40,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Right-click to use custom\rcontextual menu"
+					"text": ":xliff:HDI2_RightClickHint",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -1023,7 +1039,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "Action",
+								"text": ":xliff:HDI2_ColAction",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1034,7 +1050,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column1",
@@ -1053,7 +1070,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "Title (localized)",
+								"text": ":xliff:HDI2_ColTitleLocalized",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1064,7 +1081,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -1085,7 +1103,7 @@
 							],
 							"header": {
 								"name": "Header3",
-								"text": "Status",
+								"text": ":xliff:HDI2_ColStatus",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1096,7 +1114,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column4",
@@ -1117,7 +1136,7 @@
 							],
 							"header": {
 								"name": "Header4",
-								"text": "Enabled",
+								"text": ":xliff:HDI2_ColEnabled",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1128,7 +1147,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column5",
@@ -1149,7 +1169,7 @@
 							],
 							"header": {
 								"name": "Header5",
-								"text": "Visible",
+								"text": ":xliff:HDI2_ColVisible",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -1160,7 +1180,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
 					]
 				},
@@ -1171,7 +1192,8 @@
 					"width": 620,
 					"height": 60,
 					"textAlign": "left",
-					"text": "The arrays below are filled according to the current selection of the text.\r\rThe command \"Get action info\" is called for every action listed in the \"Action\" Column."
+					"text": ":xliff:HDI2_Text12",
+					"stroke": "automatic"
 				},
 				"Text10": {
 					"type": "text",
@@ -1181,7 +1203,8 @@
 					"height": 17,
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Sample text"
+					"text": ":xliff:HDI2_SampleText",
+					"stroke": "automatic"
 				}
 			}
 		}
